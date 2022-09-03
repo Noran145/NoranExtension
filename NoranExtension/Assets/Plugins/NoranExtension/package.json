@@ -1,0 +1,11 @@
+{
+    "name": "com.noran.noranextension",
+    "version": "0.0.1",
+    "displayName": "NoranExtension",
+    "unity": "2021.3",
+    "description": "拡張だったり色々",
+    "author": {
+        "name": "Noran"
+    },
+    "dependencies": {}
+}
