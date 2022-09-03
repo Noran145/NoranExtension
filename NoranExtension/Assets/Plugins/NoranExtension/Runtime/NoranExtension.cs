@@ -11,6 +11,16 @@ namespace Noran.Extension
     public partial struct NoranExtension
     {
         /// <summary>
+        /// Editor上でのみDebug.Logを吐き出すシンプルなメソッド
+        /// </summary>
+        /// <param name="message"></param>
+        [Conditional("UNITY_EDITOR")]
+        public static void DebugLog(string message)
+        {
+            Debug.Log(message);
+        }
+        
+        /// <summary>
         /// Editor上でのみオブジェクトの名前をDebug.Logに吐き出す
         /// </summary>
         /// <param name="target"></param>
