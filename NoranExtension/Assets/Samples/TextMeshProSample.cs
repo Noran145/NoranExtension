@@ -1,12 +1,12 @@
 using System;
+using Noran.Extension.TextMeshPro;
 using TMPro;
 using UniRx;
 using UniRx.Triggers;
 using UnityEngine;
 using UnityEngine.UI;
-using Random = UnityEngine.Random;
 
-namespace Noran.Extension.TextMeshPro
+namespace Noran.Extension.Samples
 {
     public class TextMeshProSample : MonoBehaviour
     {
@@ -25,18 +25,8 @@ namespace Noran.Extension.TextMeshPro
                 exitButtonObservable,
                 clickButtonObservable.AsUnitObservable()).Subscribe(_ =>
             {
-                tmp.ChangeTextColor(RandomColor());
+                tmp.ChangeTextColor(NoranExtension.GetRandomColorByRGB());
             }).AddTo(this);
-        }
-
-        /// <summary>
-        /// Randomの色を返す
-        /// </summary>
-        /// <returns></returns>
-        private static Color RandomColor()
-        {
-            var c = new Color(Random.Range(0f, 1f), Random.Range(0f, 1f), Random.Range(0f, 1f));
-            return c;
         }
     }
 }

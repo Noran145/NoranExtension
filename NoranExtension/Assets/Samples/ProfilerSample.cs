@@ -1,8 +1,9 @@
+using Noran.Extension.Profile;
 using UniRx;
 using Unity.Profiling;
 using UnityEngine;
 
-namespace Noran.Extension.Profile
+namespace Noran.Extension.Samples
 {
     public class ProfilerSample : MonoBehaviour
     {
