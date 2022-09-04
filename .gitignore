@@ -72,6 +72,7 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /NoranExtension/[Aa]ssets/[Ss]treamingAssets/aa.meta
 /NoranExtension/[Aa]ssets/[Ss]treamingAssets/aa/*
+/NoranExtension/[Aa]ssets/[Ss]treamingAssets.meta
 
 # Mac
 .DS_Store
